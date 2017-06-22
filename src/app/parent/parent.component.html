@@ -1,4 +1,10 @@
 <h1>Parent</h1>
 
+<p (messageOutput)="updateMessage($event)">
+  Child says {{message}}
+</p>
+
 <input #parentInput>
-<button (click)="sayToChild(parentInput)">Say to child</button>
+<button (click)="sayToChild(parentInput.value)">Say to child</button>
+
+<app-child [messageInput]="messageFromParent"></app-child>

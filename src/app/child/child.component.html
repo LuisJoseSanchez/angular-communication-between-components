@@ -1,3 +1,6 @@
-<p>
-  child works!
-</p>
+<h2>Child</h2>
+
+<p>Parent says {{message}}</p>
+
+<input #childInput>
+<button (click)="sayToParent(childInput.value)">Say to parent</button>
