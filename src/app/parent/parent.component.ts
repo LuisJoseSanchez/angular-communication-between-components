@@ -20,7 +20,6 @@ export class ParentComponent implements OnInit {
   }
 
   updateMessage(event) {
-    console.log('holaaaaaa');
     this.message = event.message;
   }
 }

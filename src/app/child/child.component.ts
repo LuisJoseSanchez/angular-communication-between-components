@@ -25,7 +25,6 @@ export class ChildComponent implements OnInit, OnChanges {
   }
 
   sayToParent(message) {
-    console.log('saytoparent');
     this.messageOutput.emit({message: message});
   }
 }
